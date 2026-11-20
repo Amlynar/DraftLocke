@@ -1,9 +1,6 @@
 import random
 from typing import List
 
-# Remove after
-from framework.alert.alert_dialog import PYIAlert
-
 
 from app.common.PokemonInfoService import PokemonInfoService, Pokemon
 
@@ -20,8 +17,6 @@ class RandomPickerPresenter:
     # ---------- View Callbacks ----------
 
     def on_generate_pressed(self, count: int):
-        PYIAlert.simple_alert(title="Error",message="View is None")
-        
         pokemon_pool = self.get_base_evolution_pokemon()
         # self.view.show_random_pokemon(pokemon_pool)
 
